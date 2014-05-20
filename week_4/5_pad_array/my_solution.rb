@@ -8,6 +8,20 @@
 
 # 1. Pseudocode
 
+
+class Array
+	def pad(x,y=nil)
+
+	end
+
+	def pad!(x,y=nil)
+
+	end
+
+end
+
+
+
 # What is the input?
 # What is the output? (i.e. What should the code return?)
 # What are the steps needed to solve the problem?
@@ -16,10 +30,10 @@
 # 2. Initial Solution
 
 
-
-
 # 3. Refactored Solution
 
 
 
 # 4. Reflection 
+
+# questions - How do you know a class needs to be created?

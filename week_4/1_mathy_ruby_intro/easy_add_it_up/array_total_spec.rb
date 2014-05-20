@@ -5,7 +5,7 @@ describe 'total' do
   let(:array_2) { [4, 4, 5, 5, 6, 6, 6, 7] }
 
   it "is defined as a method" do
-    defined?(total).should eq 'method'
+    defined?(total).should eq "method"
   end
 
   it "requires a single argument" do
