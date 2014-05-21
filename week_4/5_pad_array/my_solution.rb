@@ -4,23 +4,9 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.  
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 # 1. Pseudocode
-
-
-class Array
-	def pad(x,y=nil)
-
-	end
-
-	def pad!(x,y=nil)
-
-	end
-
-end
-
-
 
 # What is the input?
 # What is the output? (i.e. What should the code return?)
@@ -28,6 +14,21 @@ end
 
 
 # 2. Initial Solution
+
+# class Array
+# 	def pad(min,y=nil)
+# 		if array.length < min
+# 			return Array.new.pad(x)
+# 		else array.length >= min
+# 			return array
+# 		end
+# 	end
+
+# 	def pad!(min,y=nil)
+
+# 	end
+
+# end
 
 
 # 3. Refactored Solution
@@ -37,3 +38,7 @@ end
 # 4. Reflection 
 
 # questions - How do you know a class needs to be created?
+# what is self.clone?
+# played with this challenge for hours. 
+# need to approach from a different perspective.
+# need to understand the assignment

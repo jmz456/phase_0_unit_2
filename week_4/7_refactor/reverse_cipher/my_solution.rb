@@ -1,7 +1,7 @@
 # U2.W4: Refactor Cipher Solution
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 
 # 1. Solution
@@ -32,13 +32,13 @@ end
 
 
 # Questions:
-# 1. What is the .to_a method doing?
-# 2. How does the rotate method work? What does it work on?
-# 3. What is `each_char` doing?
-# 4. What does `sample` do?
-# 5. Are there any other methods you want to understand better?
-# 6. Does this code look better or worse than your refactored solution
-#    of the original cipher code? What's better? What's worse?
+# 1. What is the .to_a method doing?  It's creating an array.
+# 2. How does the rotate method work? What does it work on?  The rotate method is like the reverse method.
+# 3. What is `each_char` doing? pass each to each string from a block
+# 4. What does `sample` do? sample choose a random element from the array
+# 5. Are there any other methods you want to understand better?  .zip  .sample   .rotate
+# 6. Does this code look better or worse than your refactored solution  
+#    of the original cipher code? What's better? What's worse?  it's easier to look at
 # 7. Is this good code? What makes it good? What makes it bad?
 
 
@@ -54,4 +54,10 @@ p translate_to_cipher("I want cookies")
 
 
 # 5. Reflection 
+# There's a lot of new code here I wish I completed and researched first.  I think this lesson
+# would have prepared me better for the rest of the lessons.  Some of these are confusing because
+# it looks like they do the same thing.  For example, .rotate seems like reverse, but there
+#   must be some slight difference.
 
+# It's interesting to follow the code around to see what code is leading into what direction.  It's
+# like following a snake path and trying to figure out where the trail leads.

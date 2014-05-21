@@ -1,7 +1,7 @@
 # U2.W4: Cipher Challenge
 
 
-# I worked on this challenge with: .
+# I worked on this challenge with: Solo
 
 
 
@@ -13,7 +13,7 @@
 
 def north_korean_cipher(coded_message)
   input = coded_message.downcase.split("") # Check out this method in IRB to see how it works! Also refer to the ruby docs.
-  decoded_sentence = []
+  decoded_sentence = []                    # this is spliting up the north_korean_cipher strings at every index.
   cipher = {"e" => "a",   # This is technically a shift of four letters...Can you think of a way to automate this? Is a hash
             "f" => "b",   # the best data structure for this problem? What are the pros and cons of hashes?
             "g" => "c", 
@@ -41,7 +41,7 @@ def north_korean_cipher(coded_message)
             "c" => "y",
             "d" => "z"}
             
-  input.each do |x| # What is #each doing here?
+  input.each do |x| # What is #each doing here?  each is iterating through north_korean_cipher
     found_match = false  # Why would this be assigned to false from the outset? What happens when it's true?
     cipher.each_key do |y| # What is #each_key doing here?
       if x == y  # What is this comparing? Where is it getting x? Where is it getting y? What are those variables really?
@@ -53,7 +53,7 @@ def north_korean_cipher(coded_message)
         decoded_sentence << " "
         found_match = true
         break
-      elsif (0..9).to_a.include?(x) # Try this out in IRB. What does   " (0..9).to_a "    do?
+      elsif (0..9).to_a.include?(x) # Try this out in IRB. What does   " (0..9).to_a "    do?  it looks like it turning something into an array
         decoded_sentence << x
         found_match = true
         break
